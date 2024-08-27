@@ -1,0 +1,6 @@
+container:
+  name: nginx-test
+  port: 80
+  image: nginx
+  tag: stable-alpine
+replicas: 3
