@@ -1,0 +1,3 @@
+container:
+  version: alpine-stable
+path: /prod
