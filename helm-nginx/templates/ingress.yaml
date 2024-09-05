@@ -12,7 +12,7 @@ spec:
   - http:
       paths:
       - path: {{ .Values.path }}
-        pathType: Prefix
+        pathType: Exact
         backend:
           service:
             name: {{ .Values.container.name }}-service
