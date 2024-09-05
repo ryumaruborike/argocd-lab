@@ -6,13 +6,12 @@ metadata:
     kubernetes.io/ingress.class: "openstack"
     octavia.ingress.kubernetes.io/internal: "false"
     octavia.ingress.kubernetes.io/backend-protocol: "HTTP"
-    octavia.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
   - http:
       paths:
-      - path: {{ .Values.path }}
-        pathType: Exact
+      - path: /
+        pathType: Prefix
         backend:
           service:
             name: {{ .Values.container.name }}-service
