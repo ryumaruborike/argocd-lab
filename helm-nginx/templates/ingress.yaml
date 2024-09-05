@@ -1,11 +1,14 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ingress-for-nginx
+  name: app-ingress
+  annotations:
+    kubernetes.io/ingress.class: "openstack"
+    octavia.ingress.kubernetes.io/internal: "false"
 spec:
-  ingressClassName: nginx
   rules:
-  - http:
+  - host: foo.bar.com 
+    http:
       paths:
       - path: {{ .Values.path }}
         pathType: Prefix
