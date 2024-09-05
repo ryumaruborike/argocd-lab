@@ -4,4 +4,4 @@ container:
   image: nginx
   tag: stable-alpine
 replicas: 3
-path: /testing
+namespace: testing
