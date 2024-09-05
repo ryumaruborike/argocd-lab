@@ -6,7 +6,7 @@ metadata:
     kubernetes.io/ingress.class: "openstack"
     octavia.ingress.kubernetes.io/internal: "false"
     octavia.ingress.kubernetes.io/backend-protocol: "HTTP"
-    octavia.ingress.kubernetes.io/rewrite-path: /
+    octavia.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
   - http:
