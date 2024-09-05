@@ -5,6 +5,7 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: "openstack"
     octavia.ingress.kubernetes.io/internal: "false"
+    octavia.ingress.kubernetes.io/backend-protocol: "HTTP"
 spec:
   rules:
   - http:
