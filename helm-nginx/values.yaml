@@ -2,6 +2,6 @@ container:
   name: nginx-test
   port: 80
   image: nginx
-  tag: stable-alpine
+  tag: 1.24-alpine
 replicas: 3
 path: /testing
